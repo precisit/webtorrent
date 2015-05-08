@@ -156,6 +156,7 @@ WebTorrent.prototype.download = function (torrentId, opts, ontorrent) {
   opts.storage = opts.storage || self.storage
 
   var torrent = new Torrent(torrentId, opts)
+  console.log("Created new torrent");
   self.torrents.push(torrent)
 
   function clientOnTorrent (_torrent) {
