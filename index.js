@@ -37,6 +37,7 @@ var VERSION = require('./package.json').version
  */
 function WebTorrent (opts) {
   var self = this
+  console.log("Creating new WebTorrent")
   if (!(self instanceof WebTorrent)) return new WebTorrent(opts)
   if (!opts) opts = {}
   EventEmitter.call(self)
